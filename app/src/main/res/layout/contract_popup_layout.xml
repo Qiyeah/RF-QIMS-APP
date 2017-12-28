@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/download"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="添 加"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F5F5F5"/>
+
+    <TextView
+        android:id="@+id/check"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="删 除"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

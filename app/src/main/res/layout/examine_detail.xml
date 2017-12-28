@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#6495ED"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/icon_left_white"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="初审分办"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1.0"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="#fff">
+
+                <TableRow
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="来文单位"
+                        android:gravity="center"
+                        android:background="#F1F9FF"
+                        />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#DCDCDC"/>
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/from_unit"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:lineSpacingMultiplier="1.2"
+                        android:minHeight="30dp"
+                        android:gravity="center_vertical|left"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#DCDCDC"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="收文日期"
+                        android:gravity="center"
+                        android:background="#F1F9FF"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#DCDCDC"/>
+
+                    <TextView
+                        android:id="@+id/receivedate"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"/>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC"/>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:text="经办人"
+                        android:gravity="center"
+                        android:background="#F1F9FF"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#DCDCDC"/>
+
+                    <TextView
+                        android:id="@+id/uname"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#DCDCDC"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="分办人"
+                        android:gravity="center"
+                        android:background="#F1F9FF"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#DCDCDC"/>
+
+                    <TextView
+                        android:id="@+id/auditor"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC"/>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:text="份数"
+                        android:gravity="center"
+                        android:background="#F1F9FF"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#DCDCDC"/>
+
+                    <TextView
+                        android:id="@+id/count"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#DCDCDC"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:text="密级"
+                        android:gravity="center"
+                        android:background="#F1F9FF"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#DCDCDC"/>
+
+                    <TextView
+                        android:id="@+id/security"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC"/>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:text="办文编号"
+                        android:gravity="center"
+                        android:background="#F1F9FF"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#DCDCDC"/>
+
+                    <TextView
+                        android:id="@+id/docno"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="12sp"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#DCDCDC"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="处理类型"
+                        android:gravity="center"
+                        android:background="#F1F9FF"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#DCDCDC"/>
+
+                    <TextView
+                        android:id="@+id/doflag"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC"/>
+
+               <!-- <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:text="办文编号"
+                        android:gravity="center"
+                        android:background="#F1F9FF"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#DCDCDC"/>
+
+                    <TextView
+                        android:id="@+id/docno"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"/>
+                </TableRow>-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC"/>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:text="标题"
+                        android:gravity="center"
+                        android:background="#F1F9FF"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#DCDCDC"/>
+
+                    <TextView
+                        android:id="@+id/doctitle"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC"/>
+
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="文件列表"
+                        android:gravity="center"
+                        android:background="#F1F9FF"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#DCDCDC"/>
+
+                    <com.zhilian.hzrf_oa.ui.widget.NoScrollListView
+                        android:id="@+id/fj_list"
+                        android:layout_weight="4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:descendantFocusability="blocksDescendants"
+                        android:divider="#F5F5F5"
+                        android:layout_height="30dp"
+                        android:dividerHeight="1dip"/>
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC"/>
+
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="批办意见\n及\n领导意见"
+                        android:gravity="center"
+                        android:background="#F1F9FF"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#DCDCDC"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4">
+                        <TextView
+                            android:id="@+id/opinion1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="60dp"
+                            android:inputType="textMultiLine"/>
+                        <Button
+                            android:id="@+id/bt_opinion1"
+                            android:layout_width="85dp"
+                            android:layout_height="25dp"
+                            android:layout_below="@+id/opinion1"
+                            android:background="@drawable/button_style2"
+                            android:drawableLeft="@drawable/button2"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="10dp"
+                            android:text="填写意见"
+                            android:textColor="#6495ED"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC"/>
+
+            </TableLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="45dp"
+        android:background="@android:color/transparent">
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:text="提交"
+            android:textSize="12sp"
+            android:textColor="#6495ED"
+            android:paddingLeft="10dp"
+            android:paddingBottom="2dp"
+            android:drawableLeft="@drawable/button3"
+            android:background="@drawable/button_style2"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/receiver"
+            android:layout_toStartOf="@+id/receiver"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/nothing"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

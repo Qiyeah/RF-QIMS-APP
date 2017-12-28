@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              android:background="#fff">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_margin="10dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DCDCDC"/>
+    <TableRow>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DCDCDC"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:text="签 收 人"
+            android:textColor="#808080"
+            android:gravity="center"
+            android:background="#F1F9FF"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DCDCDC"/>
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:textColor="#808080"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DCDCDC"/>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"/>
+    <TableRow>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DCDCDC"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:text="签收时间"
+            android:textColor="#808080"
+            android:gravity="center"
+            android:background="#F1F9FF"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DCDCDC"/>
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:textColor="#808080"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DCDCDC"/>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"/>
+    <TableRow>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DCDCDC"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="签收意见"
+            android:textColor="#808080"
+            android:gravity="center"
+            android:background="#F1F9FF"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DCDCDC"/>
+
+
+        <TextView
+            android:id="@+id/tv_opinion"
+            android:textColor="#808080"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_height="30dp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DCDCDC"/>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"/>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.zhilian.hzrf_oa"
+          android:versionCode="2"
+          android:versionName="2.0">
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--获取网络类型权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 读写SDCard权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取电话状态权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- WIFI权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 短信服务权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="com.zhilian.api.ContextUtil">
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- 引导界面 -->
+        <!-- 主界面 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.MainActivity">
+
+        </activity>
+        <!-- 初始界面 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.LogoActivity"
+                  android:noHistory="true"/>
+
+        <!-- 收文管理 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.ReceiveManageActivity"/>
+
+        <!-- 收文详情 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.ReceiveDetail"/>
+
+        <!-- 发文管理 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.DocsendManageActivity"/>
+        <!-- 发文详情 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.DocsendDetail"/>
+
+        <!-- 个人日程 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.PersonalAgendaActivity"/>
+        <!-- 日程详情 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.ScheduleDetailActivity"/>
+
+        <!-- 记事本 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.NotepadActivity"/>
+        <!-- 记事本详情 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.NoteDetailActivity"/>
+
+        <!-- 我的邮件 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.MyMailActivity">
+
+        </activity>
+        <!-- 写邮件 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.WriteLetterActivity"/>
+        <!-- 邮件详情 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.MyMailCheckActivity"/>
+
+        <!-- 公告通知 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.NoticeAnnouncementActivity"/>
+        <!-- 公告详情 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.NoticeAnnouncementDetails"/>
+
+        <!-- 一般阅知 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.AchieveManageActivity"/>
+        <!-- 一般阅知（详情） -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.AchieveDetail"/>
+
+        <!-- 档案柜 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.FileCabinetActivity"/>
+        <!-- 收文归档（详情） -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.ReceiveCabDetail"/>
+        <!-- 发文归档（详情） -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.DocsendCabDetail"/>
+        <!--*******************************************************************-->
+        <!-- 内部发文 -->
+        <activity android:name=".ui.activity.InnerSendManagerActivity"/>
+        <!-- 内部发文（详情） -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.InnerSendDetail"/>
+        <!--初审分办-->
+        <activity android:name=".ui.activity.ExamineManagerActivity"/>
+        <activity android:name=".ui.activity.ExamineDetailActivity"/>
+        <!--*******************************************************************-->
+        <!-- 通讯录 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.AddressListActivity"/>
+        <!-- 通讯录详情 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.AddressListDetailActivity"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/ImmerseStatusTheme"/>
+
+        <!-- 关于我们 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.AboutUsActivity"/>
+        <!-- 联系我们 -->
+        <activity android:name="com.zhilian.hzrf_oa.ui.activity.ContactActivity"/>
+
+        <!-- 附件下载的service -->
+        <service android:name=".service.DownloadService"/>
+        <!-- 版本更新的service -->
+        <service android:name="com.zhilian.hzrf_oa.update.UpdateService"/>
+        <!-- 待办收文service -->
+        <service
+            android:name="com.zhilian.hzrf_oa.service.ReceiveService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.zhilian.service.ReceiveService"/>
+
+                <category android:name="android.intent.category.default"/>
+            </intent-filter>
+        </service>
+
+        <!-- 待办发文的service -->
+        <service
+            android:name="com.zhilian.hzrf_oa.service.DocsendService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.zhilian.service.DocsendService"/>
+
+                <category android:name="android.intent.category.default"/>
+            </intent-filter>
+        </service>
+        <service android:name=".service.InnerSendService">
+            <intent-filter>
+                <action android:name="com.zhilian.service.InnerSendService"/>
+                <category android:name="android.intent.category.default"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

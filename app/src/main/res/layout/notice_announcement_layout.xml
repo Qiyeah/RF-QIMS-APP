@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#6495ED">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_left_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/back"
+            android:layout_toRightOf="@+id/back"
+            android:text="公告通知"
+            android:textColor="#fff"
+            android:textSize="16sp"/>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/menu_p"-->
+        <!--android:layout_width="25dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:background="@drawable/menu_p"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginRight="10dp"/>-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#fff">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/search_black"/>
+
+        <EditText
+            android:id="@+id/searchtext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="搜索"
+            android:textColorHint="#DCDCDC"/>
+
+        <ImageView
+            android:id="@+id/ivDeleteText"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:src="@drawable/delete"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="#fff">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/common"-->
+    <!--android:layout_width="55dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:text="普通"-->
+    <!--android:gravity="center"-->
+    <!--android:background="#99CCFF"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_toLeftOf="@+id/view"-->
+    <!--android:layout_toStartOf="@+id/view"-->
+    <!--android:layout_marginRight="5dp"/>-->
+
+    <!--<View-->
+    <!--android:id="@+id/view"-->
+    <!--android:layout_width="1dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:background="#F5F5F5"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_centerHorizontal="true"/>-->
+
+    <!--<TextView-->
+
+    <!--android:layout_width="55dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:text="紧急"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_alignLeft="@+id/view"-->
+    <!--android:layout_alignStart="@+id/view"-->
+    <!--android:layout_marginLeft="5dp"/>-->
+    <!--</RelativeLayout>-->
+
+    <ListView
+        android:id="@+id/list_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#F5F5F5"
+        android:dividerHeight="1dip"/>
+
+    <LinearLayout
+        android:id="@+id/notice_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_not_content_show"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无公告显示"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/viewpager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"/>-->
+
+</LinearLayout>

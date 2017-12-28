@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">人防办OA</string>
+
+    <!-- 主界面 -->
+    <string name="chats">消息</string>
+    <string name="contacts">工作台</string>
+    <string name="discover">联系人</string>
+    <string name="me">我的</string>
+
+    <!-- 登录 -->
+    <string name="login_app_name">惠州市人防办OA系统</string>
+    <string name="login_user_hint">请输入账号</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_button">登&#160;&#160;录</string>
+    <string name="login_forget_password">忘记密码？</string>
+    <string name="login_technical_support">技术支持</string>
+    <string name="login_about_us">关于我们</string>
+    <string name="login_copyright"> Copyright © 2016 智联科技有限公司 版权所有</string>
+
+    <!-- 联系人 -->
+    <string name="friends">联系人</string>
+    <string name="friends_address_list">通讯录</string>
+    <string name="friends_my_group">我的群组</string>
+    <string name="friends_create_group">创建团队</string>
+    <!-- 通讯录 -->
+    <string name="friends_input_keyword_hint">请输入关键字</string>
+    <!-- 联系人详情 -->
+    <string name="friends_mbphone">手机</string>
+    <string name="friends_phone">固定电话</string>
+    <string name="friends_person_infrom">个人信息</string>
+    <string name="friends_name">姓名</string>
+    <string name="friends_begin_date">开始工作时间</string>
+    <string name="friends_married">婚姻状态</string>
+    <string name="friends_gradename">职务名称</string>
+    <string name="friends_gradelevel">职务级别</string>
+
+    <!-- 版本更新 -->
+    <string name="update_download_failed">下载失败</string>
+    <string name="update_download_failed_msg">下载失败原因</string>
+    <string name="update_download_finish">下载完成</string>
+    <string name="update_download_processing">正在下载</string>
+    <string name="update_download_start">下载开始</string>
+    <string name="update_download_new_version">有新版本</string>
+
+    <!-- 关于我们 -->
+    <string name="contact_phone">热线电话：0752-2589937</string>
+    <string name="contact_we">联系我们：惠州市智联科技有限公司</string>
+    <string name="contact_address">公司地址：广东惠州惠城区江北街道云山西路12号德赛大厦1907</string>
+    <string name="contact_url">公司网站：www.zhiliantech.com</string>
+
+    <string-array name="responsible_person">
+        <item>--请选择常用意见--</item>
+        <item>同意。</item>
+        <item>已核。</item>
+        <item>已阅。</item>
+    </string-array>
+
+    <!-- 提醒 -->
+    <string-array name="remind1">
+        <item>无提醒</item>
+        <item>5分钟前</item>
+        <item>10分钟前</item>
+        <item>30分钟前</item>
+        <item>1小时前</item>
+        <item>2小时前</item>
+    </string-array>
+    <!-- 提醒（全天事件） -->
+    <string-array name="remind2">
+        <item>无提醒</item>
+        <item>1天前</item>
+    </string-array>
+    <!-- 公开范围 -->
+    <string-array name="scope">
+        <item>--请选择--</item>
+        <item>私人</item>
+        <item>全部人员</item>
+        <item>指定人员</item>
+    </string-array>
+</resources>

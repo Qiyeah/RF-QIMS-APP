@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff">
+
+    <ImageView
+        android:id="@+id/img_msg_item"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/content_msg_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_msg_item"
+        android:layout_toEndOf="@+id/img_msg_item"
+        android:layout_toRightOf="@+id/img_msg_item"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/name_msg_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_msg_item"
+        android:layout_toEndOf="@+id/img_msg_item"
+        android:layout_toRightOf="@+id/img_msg_item"
+        android:textColor="#C0C0C0"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/time_msg_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_msg_item"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#C0C0C0"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

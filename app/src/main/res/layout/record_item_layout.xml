@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_margin="10dp">
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:text="环节名称"
+                android:textColor="#808080"
+                android:gravity="center"
+                android:background="#F1F9FF"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#DCDCDC"/>
+
+
+            <TextView
+                android:id="@+id/name"
+                android:textColor="#808080"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:text="初审分办"/>
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DCDCDC"/>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:text="处理人"
+                android:textColor="#808080"
+                android:gravity="center"
+                android:background="#F1F9FF"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#DCDCDC"/>
+
+            <TextView
+                android:id="@+id/username1"
+                android:layout_width="0dp"
+                android:textColor="#808080"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:text="admin"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#DCDCDC"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="处理操作"
+                android:textColor="#808080"
+                android:gravity="center"
+                android:background="#F1F9FF"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#DCDCDC"/>
+
+            <TextView
+                android:id="@+id/operation"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:textColor="#808080"
+                android:layout_height="wrap_content"
+                android:text="发送"/>
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DCDCDC"/>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+
+                android:layout_height="30dp"
+                android:text="开始时间"
+                android:textColor="#808080"
+                android:gravity="center"
+                android:background="#F1F9FF"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#DCDCDC"/>
+
+            <TextView
+                android:id="@+id/starttime"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:paddingLeft="5dp"
+                android:textColor="#808080"
+                android:layout_height="wrap_content"
+                android:text="2016-11-09 16:41:29"/>
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DCDCDC"/>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:text="结束时间"
+                android:textColor="#808080"
+                android:gravity="center"
+                android:background="#F1F9FF"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#DCDCDC"/>
+
+            <TextView
+                android:id="@+id/endtime"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:paddingLeft="5dp"
+                android:textColor="#808080"
+                android:layout_height="wrap_content"
+                android:text="2016-11-09 16:41:29"/>
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DCDCDC"/>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:text="处理意见"
+                android:textColor="#808080"
+                android:gravity="center"
+                android:background="#F1F9FF"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#DCDCDC"/>
+
+            <TextView
+                android:id="@+id/opinion"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:paddingLeft="5dp"
+                android:textColor="#808080"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DCDCDC"/>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="35dp"
+                android:singleLine="false"
+                android:text="下一步\n处理人"
+                android:textColor="#808080"
+                android:gravity="center"
+                android:background="#F1F9FF"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#DCDCDC"/>
+
+            <TextView
+                android:id="@+id/nextusername"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:paddingLeft="5dp"
+                android:textColor="#808080"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

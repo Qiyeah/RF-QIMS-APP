@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/transparent">
+
+    <EditText
+        android:id="@+id/condition"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="请输入标题或文号查询"
+        android:textColorHint="#DCDCDC"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+    <ImageView
+        android:id="@+id/ivDeleteText"
+        android:layout_weight="1"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/delete"
+        android:visibility="invisible"/>
+    <View
+        android:layout_width="1dp"
+        android:background="#aaa"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="25dp"/>
+    <TextView
+        android:id="@+id/request"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:text="取消"/>
+
+</LinearLayout>

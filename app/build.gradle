@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('D:\\Android\\WORK\\HZRF-APP\\app/hzrf-oa.jks')
+            keyAlias 'hzrf-oa'
+            keyPassword 'zlhzrfoa'
+            storePassword 'zlhzrfoa'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/NOTICE' // will not include NOTICE file
+        exclude 'META-INF/LICENSE' // will not include LICENSE file
+        // as noted by @Vishnuvathsan you may also need to include
+        // variations on the file name. It depends on your dependencies.
+        // Some other common variations on notice and license file names
+        exclude 'META-INF/notice'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license'
+        exclude 'META-INF/license.txt'
+    }
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.zhilian.hzrf_oa"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.2.0'
+    compile 'com.david.gradientuilib:gradientuilibrary:1.0.1'
+    compile files('libs/jackson-annotations-2.4.0.jar')
+    compile files('libs/jackson-core-2.5.3.jar')
+    compile files('libs/jackson-databind-2.4.3.jar')
+    compile files('libs/commons-codec-1.9.jar')
+    compile 'com.dubsmash.volley:library:2.0.1'
+    compile files('libs/library-2.4.0.jar')
+    compile files('libs/picasso-2.5.2.jar')
+    compile 'com.android.support:design:23.+'
+    compile files('libs/fastjson-1.1.53.android.jar')
+    compile 'com.google.code.gson:gson:2.8.2'
+}
